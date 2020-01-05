@@ -56,9 +56,9 @@ client.long_help("unlock", lock_help)
 client.long_help("purge", purge_help)
 
 try:
-    admin_role = client.get_guild(458765854624972811).get_role(458767248367157278)
+    admin_role = client.get_guild(662417141080916001).get_role(662419369682403336)
 except AttributeError:
-    log.critical(f"FAU moderator role not found. Mod commands will raise an exception when run.")
+    log.critical(f"WTC moderator role not found. Mod commands will raise an exception when run.")
 
 @client.command(trigger="lock", aliases=["l"])
 async def lock(command: str, message: discord.Message):
