@@ -28,7 +28,7 @@ boot_status = "dnd"
 # no_bpid_prefix will disable the bot adding its own process ID should it be enabled.
 no_bpid_prefix = True
 prefixes = [
-	"dean",
+	"dean ",
 ]
 
 # A name for your bot
