@@ -28,11 +28,11 @@ boot_status = "dnd"
 # no_bpid_prefix will disable the bot adding its own process ID should it be enabled.
 no_bpid_prefix = True
 prefixes = [
-	"owl ",
+	"dean",
 ]
 
 # A name for your bot
-bot_name = "Owlsley's Slave"
+bot_name = "Dean of Students"
 
 # Size of the bot's internal message cache. It may be sometimes useful to use the cache so
 # an option is given here to make it bigger. The default cache size in discord.py is 5000
