@@ -55,10 +55,18 @@ client.long_help("lock", lock_help)
 client.long_help("unlock", lock_help)
 client.long_help("purge", purge_help)
 
-try:
-    admin_role = client.get_guild(662417141080916001).get_role(662419369682403336)
-except AttributeError:
-    log.critical(f"WTC moderator role not found. Mod commands will raise an exception when run.")
+admin_role = None
+if client.is_ready():
+    admin_role = client.get_guild(662417141080916001).get_guild(662419369682403336)
+
+
+@client.ready
+async def set_mod_role():
+    global admin_role
+    try:
+        admin_role = admin_role = client.get_guild(662417141080916001).get_guild(662419369682403336)
+    except AttributeError:
+        log.critical(f"WTC mod role not found, oof")
 
 
 @client.command(trigger="lock", aliases=["l"])
