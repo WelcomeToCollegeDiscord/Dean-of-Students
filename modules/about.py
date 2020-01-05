@@ -31,7 +31,7 @@ async def return_bot_info(command: str, message: discord.Message):
 	embed = discord.Embed(title=f"{client.bot_name} info", description=discord.Embed.Empty, color=0x404040)
 	embed = embed.add_field(name="Version", value=f"Framework version {client.__version__}")
 	embed = embed.add_field(name="Creator", value=f"{owner.name}#{owner.discriminator}\nID {owner.id}\n{owner.mention}")
-	embed = embed.add_field(name="Github", value="`young-amateurs-rc/arbys`\nhttps://www.github.com/young-amateurs-rc/arbys")
+	embed = embed.add_field(name="Github", value="`WelcomeToCollegeDiscord/Dean-of-Students`\nhttps://www.github.com//WelcomeToCollegeDiscord/Dean-of-Students/")
 	embed = embed.add_field(name="Built with", value=f"Running on {python_version}\ndiscord.py library version {discord.__version__}\nntoskrnl-bot framework (`ntoskrnl4/ntoskrnl-bot`)")
 	embed = embed.add_field(name="Invite Link", value=discord.utils.oauth_url(client.user.id))
 	embed = embed.set_footer(text=datetime.datetime.utcnow().__str__())
