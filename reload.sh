@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-cd /home/saito/OwlBot/
+cd /home/saito/Dean-of-Students/
 sudo git pull
-sudo docker stop ob
-sudo docker rm ob
-sudo docker build -t ob .
-sudo docker run -d --name ob ob
+sudo docker stop dos
+sudo docker rm dos
+sudo docker build -t dos .
+sudo docker run -d --name dos dos
