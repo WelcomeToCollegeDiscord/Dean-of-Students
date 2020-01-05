@@ -13,9 +13,6 @@ from modules import _debug
 from modules import about
 # noinspection PyUnresolvedReferences
 
-from modules import mc
-# noinspection PyUnresolvedReferences
-
 from modules import emoji_stats
 # noinspection PyUnresolvedReferences
 
@@ -97,9 +94,6 @@ from modules import antispambot
 # noinspection PyUnresolvedReferences
 
 from modules import join_leave_msgs
-# noinspection PyUnresolvedReferences
-
-from modules import rat
 # noinspection PyUnresolvedReferences
 
 from modules import wa
