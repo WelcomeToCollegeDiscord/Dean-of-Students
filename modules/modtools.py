@@ -62,7 +62,7 @@ except AttributeError:
 
 @client.command(trigger="lock", aliases=["l"])
 async def lock(command: str, message: discord.Message):
-    if message.guild.id != 458765854624972811:
+    if message.guild.id != 662417141080916001:
         if message.guild.id != 452274699641159683:
             # wrong guild
             await message.channel.send("Invalid server")
@@ -106,7 +106,7 @@ async def lock(command: str, message: discord.Message):
 
 @client.command(trigger="unlock", aliases=["ul"])
 async def unlock(command: str, message: discord.Message):
-    if message.guild.id != 458765854624972811:
+    if message.guild.id != 662417141080916001:
         if message.guild.id != 452274699641159683:
             # wrong guild
             await message.channel.send("Invalid server")
@@ -150,7 +150,7 @@ async def unlock(command: str, message: discord.Message):
 
 @client.command(trigger="purge", aliases=["nuke"])
 async def nuke_old_chat(command: str, message: discord.Message):
-    if message.guild.id != 458765854624972811:
+    if message.guild.id != 662417141080916001:
         if message.guild.id != 452274699641159683:
             # wrong guild
             await message.channel.send("Invalid server")
