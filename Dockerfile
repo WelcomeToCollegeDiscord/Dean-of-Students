@@ -9,4 +9,4 @@ RUN sudo pip3 uninstall youtube-dl -y && \
 
 COPY . .
 
-CMD ["./run-owl.sh"]
+CMD ["./run-dean.sh"]
