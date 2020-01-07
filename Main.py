@@ -59,9 +59,6 @@ from modules import uwu
 from modules import help
 # noinspection PyUnresolvedReferences
 
-from modules import oof
-# noinspection PyUnresolvedReferences
-
 from modules import xkcd
 # noinspection PyUnresolvedReferences
 
@@ -72,9 +69,6 @@ from modules import bonk
 # noinspection PyUnresolvedReferences
 
 from modules import phonetics
-# noinspection PyUnresolvedReferences
-
-from modules import oofs
 # noinspection PyUnresolvedReferences
 
 
