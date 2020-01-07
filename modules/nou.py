@@ -4,7 +4,7 @@ import discord
 
 @client.message()
 async def nou(message: discord.Message):
-	if message.content.lower().endswith("owl shut down"):
+	if message.content.lower().endswith("dean shut down"):
 		try:
 			await message.channel.send("no u")
 		except:  # that's fine, we don't care
