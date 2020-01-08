@@ -92,4 +92,6 @@ from modules import join_leave_msgs
 
 from modules import wa
 
+from modules import dean
+
 client.run(token)
