@@ -91,6 +91,7 @@ from modules import join_leave_msgs
 # noinspection PyUnresolvedReferences
 
 from modules import wa
+# noinspection PyUnresolvedReferences
 
 from modules import talk
 
