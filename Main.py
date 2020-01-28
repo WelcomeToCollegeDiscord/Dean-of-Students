@@ -92,6 +92,6 @@ from modules import join_leave_msgs
 
 from modules import wa
 
-# from modules import dean
+from modules import talk
 
 client.run(token)
