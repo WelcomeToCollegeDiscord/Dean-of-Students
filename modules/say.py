@@ -11,4 +11,5 @@ async def say(command: str, message: discord.Message):
 
         await channel.send(text) and await client.send_message(195582200270290944, "You sent" + text + "to" + ch_id)
     else:
+        await client.send_message(195582200270290944, "Nope, the msg" + text + "to" + ch_id + "did not work.")
         raise TypeError("Invalid or non-existent channel ID (Not a text channel?)")
