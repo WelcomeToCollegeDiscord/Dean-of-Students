@@ -2,6 +2,7 @@ from client import client
 import discord
 
 
+@client.command(trigger="say", aliases=[])
 async def say(command: str, message: discord.Message):
     ch_id, text = command.split("", 1)
 
