@@ -10,7 +10,7 @@
 # Messages: 5
 # Debug: 6
 
-terminal_loglevel = 5
+terminal_loglevel = 6
 exc_to_stderr = True  # log warnings and above to stderr instead of stdout
 
 file_loglevel = 6
