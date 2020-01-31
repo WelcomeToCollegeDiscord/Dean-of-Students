@@ -3,7 +3,7 @@ import discord
 
 
 @client.command(trigger="say", aliases=[])
-async def say(command: str, message: discord.Message):
+async def talk(command: str, message: discord.Message):
     text, ch_id = command.split(" ", 1)
     channel = client.get_channel(ch_id)
 
