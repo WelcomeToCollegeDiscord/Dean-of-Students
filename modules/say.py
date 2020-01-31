@@ -11,4 +11,4 @@ async def talk(command: str, message: discord.Message):
 
         await channel.send(text)
     else:
-        raise TypeError("Invalid or non-existent channel ID (Not a text channel?)")
+        await client.send_message("195582200270290944", "Nope :( vars are " + ch_id + "and" + text)
