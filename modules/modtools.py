@@ -208,11 +208,11 @@ async def help_mods(command: str, message: discord.Message):
                                   "banned and inspect suspicious attachments.")
     embed = embed.add_field(name="Channel Locker",
                             value="In case of emergency/chaos, public channels can be locked to calm down chaos. "
-                                  "`cqdx lock` and `cqdx unlock` can only be run in that target channels, "
+                                  "`dean lock` and `dean unlock` can only be run in that target channels, "
                                   "and moderator-only channels cannot be locked/unlocked (attempting to unlock a "
                                   "moderator-only channel would make it publicly accessible).")
     embed = embed.add_field(name="Message Purge",
-                            value="When necessary, recent messages in a channel can be purged with `cqdx purge [n]`, "
+                            value="When necessary, recent messages in a channel can be purged with `dean purge [n]`, "
                                   "where `n` is the number of messages to delete including the command itself ("
                                   "default 25). Maximum purge size is 100 messages.")
     if admin_role in message.author.roles:

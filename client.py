@@ -167,7 +167,8 @@ class FrameworkClient(discord.Client):
 
         self.message_count += 1
         if not self.active:
-            return  # An external interface like the server can reenable this. (young-amateurs-rc/arbys modules/server.py)
+            return  # An external interface like the server can reenable this. (young-amateurs-rc/arbys
+            # modules/server.py)
 
         for func in self._message_handlers:
             try:
