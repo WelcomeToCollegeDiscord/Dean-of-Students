@@ -12,4 +12,4 @@ async def talk(command: str, message: discord.Message):
 
         await channel.send(text)
     else:
-        await chid.send(text, ch_id)
+        await cchhidd.send(text, ch_id)
