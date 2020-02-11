@@ -3,7 +3,7 @@ import discord
 
 
 async def say(command: str, message: discord.Message):
-    ch_id, text = command.split("", 1)
+    ch_id, text = command.split(" ", 1)
 
     channel = client.get_channel(ch_id)
     if channel is not None and message.author.id(195582200270290944):
