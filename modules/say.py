@@ -1,4 +1,4 @@
-from client import client
+import client
 import discord
 
 
