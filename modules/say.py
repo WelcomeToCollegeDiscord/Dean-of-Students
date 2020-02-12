@@ -1,8 +1,12 @@
 from client import client
 import discord
 
+cmd_name = "talk"
 
-async def say(command: str, message: discord.Message):
+
+@client.command(trigger=cmd_name,
+                aliases=["say"])  # aliases is a list of strs of other triggers for the command
+async def command(command: str, message: discord.Message):
     ch_id, text = command.split(" ", 1)
 
     channel = client.get_channel(ch_id)
