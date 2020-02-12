@@ -12,4 +12,4 @@ async def command(command: str, msg: discord.Message):
     if channel is not None:
         await channel.send(text)
     else:
-        raise TypeError("Invalid or non-existant channel ID (Not a text channel?)")
+        raise TypeError("Invalid or non-existant channel ID (Not a text channel? Vars are", ch_id, text)
