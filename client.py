@@ -291,7 +291,7 @@ class FrameworkClient(discord.Client):
         log.debug(f"registered new member_remove handler {func.__name__}()")
         return func
 
-    def get_channel(self, receive_self: bool = False):
+    def message(self, receive_self: bool = False):
         def inner_decorator(func: Callable[[discord.Message], None]):
             async def wrapped_handler(message: discord.Message):
                 if not receive_self and message.author.id == client.user.id:
