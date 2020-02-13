@@ -7,7 +7,10 @@ cmd_name = "talk"
 @client.command(trigger=cmd_name,
                 aliases=["say"])  # aliases is a list of strs of other triggers for the command
 async def command(command: str, msg: discord.Message):
-    ch_id, text = command.split(" ", 1)
+    a1 = command.split(" ", 1)
+    ch_id = a1[0]
+    text = a1[1]
+
     channel = client.get_channel(ch_id)
     oof = client.get_channel(663214410667655238)
 
