@@ -1,4 +1,3 @@
-import log
 from client import client
 import discord
 
