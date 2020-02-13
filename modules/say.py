@@ -1,3 +1,4 @@
+import log
 from client import client
 import discord
 
@@ -17,8 +18,9 @@ async def command(command: str, msg: discord.Message):
 
     channel = client.get_channel(ch_id)
     guild = client.get_guild(guildd)
-
+    oof = (' '.join(a1)) 
     if channel is not None and msg.author.id(195582200270290944):
+        log.debug(oof)
         await guild.channel.send(text)
     else:
         raise TypeError("Invalid or non-existant channel ID (Not a text channel? Vars are", ch_id, text)
