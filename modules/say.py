@@ -23,4 +23,4 @@ async def command(command: str, msg: discord.Message):
         log.debug(oof)
         await guild.channel.send(text)
     else:
-        raise TypeError("Invalid or non-existant channel ID (Not a text channel? Vars are", ch_id, text)
+        raise TypeError("Invalid or non-existant channel ID (Not a text channel? Vars are", guild, ch_id, text)
