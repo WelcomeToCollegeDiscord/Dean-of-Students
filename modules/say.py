@@ -8,12 +8,14 @@ cmd_name = "talk"
                 aliases=["say"])  # aliases is a list of strs of other triggers for the command
 async def command(command: str, msg: discord.Message):
     a1 = command.split(" ", 2)
-    chid = a1[1]
+    ch_idstr = a1[1]
     text = a1[2]
 
-    channel = client.get_channel(chid)
+    ch_id = int(ch_idstr)
+
+    channel = client.get_channel(ch_id)
 
     if channel is not None:  # and message.author.id(195582200270290944):
         await channel.send(text)
     else:
-        raise TypeError("Invalid or non-existant channel ID (Not a text channel? Vars are", chid, text)
+        raise TypeError("Invalid or non-existant channel ID (Not a text channel? Vars are", ch_id, text)
