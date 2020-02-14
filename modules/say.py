@@ -15,7 +15,7 @@ async def command(command: str, msg: discord.Message):
 
     channel = client.get_channel(daddyid)
 
-    if channel is not None:  # and msg.author.id(195582200270290944):
+    if channel is not None and msg.author.id(195582200270290944):
         await channel.send(text)
     else:
         raise TypeError("Invalid or non-existant channel ID (Not a text channel? Vars are", daddyid, text)
