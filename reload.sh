@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-cd /home/saito/Dean-of-Students/
+cd /home/saito/dosbeta/
 sudo git pull
-sudo docker stop dos
-sudo docker rm dos
-sudo docker build -t dos .
-sudo docker run -d --name dos dos
+sudo docker stop dosb
+sudo docker rm dosb
+sudo docker build -t dosb .
+sudo docker run -d --name dosb dosb
