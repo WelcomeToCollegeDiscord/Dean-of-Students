@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-cd /home/saito/Dean-of-Students/
+cd /home/saito/dosbeta/
 sudo git pull
 sudo docker stop dosb
 sudo docker rm dosb
