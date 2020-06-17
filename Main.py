@@ -93,6 +93,6 @@ from modules import join_leave_msgs
 from modules import wa
 # noinspection PyUnresolvedReferences
 
-# from modules import say
+from modules import say
 
 client.run(token)
