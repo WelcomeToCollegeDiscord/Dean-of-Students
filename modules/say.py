@@ -10,12 +10,12 @@ async def command(command: str, message: discord.Message):
     a1 = command.split(" ", 2)
     ch_idstr = a1[1]
     text = a1[2]
-
+    role = discord.utils.find(lambda r: r.name == 'Staff', client.message.server.roles)
     daddyid = int(ch_idstr)
 
     channel = client.get_channel(daddyid)
 
-    if channel and message.author.id('195582200270290944'):
+    if channel is not None and role is not None:
         await channel.send(text)
     else:
         raise TypeError("Invalid or non-existant channel ID (Not a text channel? Vars are", daddyid, text)
